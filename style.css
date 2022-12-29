@@ -1,0 +1,446 @@
+@import url(https://lolstatic-a.akamaihd.net/webfonts/live/css/valorant/fonts.css);
+@import url(/static/Tungsten-Bold_Web-645dd701b817837ec5ee1a8e7df02c71.woff2);
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-family: Tungsten-Bold, arial, georgia, sans-serif;
+  letter-spacing: 2px;
+  line-height: 2px;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+body {
+  margin: 0;
+  font-family: DINNextW1G, arial, georgia, sans-serif;
+  line-height: 1.5;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 20px;
+  color: white;
+  background-color: black;
+  margin-top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-family: DINNextW1G, arial, georgia, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.playNowNavButton {
+  margin-left: auto;
+}
+
+.playNowNavButton button {
+  background-image: linear-gradient(
+    60deg,
+    rgb(255, 51, 66) 0%,
+    rgb(255, 48, 64) 0.01%,
+    rgb(255, 125, 102) 100%
+  );
+  color: white;
+  padding: 10px 20px;
+  border-radius: 1rem;
+}
+
+.playNowNavButton button:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.scrollAgent li,
+.agentDescription h1,
+.agentDescription h3 {
+  list-style: none;
+  color: #ece8e1;
+}
+
+.scrollAgent li {
+  user-select: none;
+  font-family: Tungsten-Bold, arial, georgia, sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 60px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.homepageFirstDiv {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://cdn.glitch.global/31807237-fc8a-4d60-9bbd-d9abe0c08c9c/neon.gif?v=1659988262933")
+    no-repeat center;
+  background-size: cover;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  height: 800px;
+}
+
+.homepageContentFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  height: 50px;
+  width: 90px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.whiteoutline {
+  border: 2px solid white;
+  padding: 2px 3px;
+  background-color: transparent;
+}
+
+.blackoutline {
+  border: 2px solid black;
+  padding: 2px 3px;
+  background-color: transparent;
+}
+
+.contentButtons {
+  border: none;
+  padding: 10px 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ece8e1;
+  background: linear-gradient(135deg, rgb(32, 32, 32) 30%, #ff4654);
+  background-size: 900%;
+  background-position: right;
+  transition: background-position 2s;
+}
+
+.whiteButton {
+  border: none;
+  padding: 10px 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  background: linear-gradient(135deg, #ff4654, #ece8e1);
+  background-size: 900%;
+  background-position: right;
+  transition: background-position 1s;
+}
+
+.whiteButton#whiteButton {
+  border: none;
+  padding: 10px 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  background: linear-gradient(135deg, black, #ece8e1);
+  background-size: 900%;
+  background-position: right;
+  transition: background-position 1s;
+}
+
+.whiteButton:hover,
+.contentButtons:hover,
+.whiteButton#whiteButton:hover {
+  color: #ece8e1;
+  background-clip: padding-box;
+  background-position: left;
+  cursor: pointer;
+}
+
+.beigeGrid {
+  background-color: #ece8e1;
+  display: grid;
+  grid-template-areas: "video text";
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.video {
+  grid-area: video;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text p {
+  width: 60ch;
+}
+
+.pictures {
+  grid-area: pictures;
+}
+
+.homepageThirdDiv {
+  display: grid;
+  grid-template-areas: "text .";
+  background: url("https://cdn.glitch.global/31807237-fc8a-4d60-9bbd-d9abe0c08c9c/killjoy.jpg?v=1660009439407")
+    no-repeat center;
+  background-size: cover;
+  height: 500px;
+}
+
+.homepageThirdDiv .text,
+.homepageFourthDiv .text,
+.homepageSixthDiv .text {
+  color: #ece8e1;
+  margin-left: 0;
+}
+
+.homepageFourthDiv {
+  background-color: #ff4654;
+  display: grid;
+  grid-template-areas: "pictures text";
+}
+
+.homepageFifthDiv {
+  display: grid;
+  grid-template-areas: "text text text text pictures";
+}
+
+.weaponPicturesHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: weaponHome;
+}
+
+.homepageSixthDiv {
+  background-color: #0f1923;
+  display: grid;
+  grid-template-areas: "weaponHome text";
+}
+.agentSelect {
+  background: url("https://cdn.glitch.global/31807237-fc8a-4d60-9bbd-d9abe0c08c9c/agent-background-generic.JPG?v=1660061734361");
+  background-size: cover;
+  height: 600px;
+  padding-top: 100px;
+}
+
+.agentSelectBackground {
+  background: url("https://cdn.glitch.global/31807237-fc8a-4d60-9bbd-d9abe0c08c9c/agent-background-generic.JPG?v=1660061734361");
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  height: 400px;
+}
+
+.scrollAgentDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.agentDescription {
+  grid-area: agentDescription;
+  display: flex;
+  color: #ece8e1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.scrollAgent {
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.scrollAgent::-webkit-scrollbar {
+  display: none;
+}
+
+.mapsBackground {
+  background-color: #ece8e1;
+}
+
+.agentImage {
+  width: 30%;
+}
+
+.arsenal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  width: 50%;
+  border: 2px solid black;
+}
+
+.arsenal-grid > div {
+  padding: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.weaponHoverColors:hover {
+  color: #ece8e1;
+  background-color: #ff4654;
+}
+
+.beigeBackground {
+  background-color: #ece8e1;
+}
+
+.nav-bar-height {
+  height: 90px;
+}
+
+.center-element {
+  margin: 0 auto;
+}
+
+.map-text-wrapper {
+  background-color: #ff4654;
+  color: #ece8e1;
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  right: 5%;
+  bottom: -20%;
+  border-radius: 1rem;
+  padding: 20px;
+}
+
+.map-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.map-title {
+  font-size: 100px;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.mapImages {
+  height: 50vh;
+  width: 100%;
+}
+
+.arrowButtons {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.arrow {
+  height: 20vh;
+  width: 20vh;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+td,
+th {
+  border: 2px solid black;
+  padding: 20px;
+  width: 400px;
+}
+
+th {
+  font-size: 50px;
+  font-family: Tungsten-Bold, arial, georgia, sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+td {
+  display: flex;
+  justify-content: center;
+}
+
+td:hover {
+  background-color: #ff4654;
+}
+
+td a img {
+  height: 100px;
+  width: 100px;
+}
